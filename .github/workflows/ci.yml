@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
     branches:
-      - main
+      - 16.7.19
   workflow_dispatch:
     inputs:
       tag:

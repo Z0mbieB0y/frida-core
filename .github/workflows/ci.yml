@@ -2,10 +2,11 @@ name: CI
 
 on:
   push:
-  pull_request:
     branches:
-      - 16.7.19
-  workflow_dispatch:
+      - '**'        # 监听所有分支的推送
+    tags:
+      - '**'        # 监听所有标签（Tag）的推送
+  workflow_dispatch: # 保留手动触发功能
     inputs:
       tag:
         description: "Tag to build/test"

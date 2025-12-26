@@ -3,7 +3,7 @@ name: CI
 on:
   push:
   pull_request:
-    tags:
+    branches:
       - 16.7.19
   workflow_dispatch:
     inputs:

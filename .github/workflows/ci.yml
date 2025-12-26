@@ -1,12 +1,13 @@
 name: CI
 
 on:
+  workflow_dispatch: # 必须包含这一行
   push:
     branches:
-      - main
+      - feature-from-tag
   pull_request:
     branches:
-      - main
+      - feature-from-tag
 
 env:
   FRIDA_CORE_OPTIONS: '--with-devkits=core --enable-tests'
